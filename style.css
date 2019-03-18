@@ -3,6 +3,8 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #333;
 }
 
@@ -19,6 +21,7 @@ nav {
   top: 0;
   right: 10;
   width: 100%;
+  background-color: #333;
 }
 
 a {
@@ -32,7 +35,12 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -80,4 +88,33 @@ input[type=submit] {
 .submit:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+div {
+  width: 77%;
+  padding: 10px;
+  border: 5px solid gray;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 640px ) {
+  img {
+    width: 240px;
+    height: 160px;
+    padding: 8px;
+    border: 16px;
+    margin: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    }
+    div {
+      width: 220px;
+      padding: 5px;
+      border: 5px solid gray;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
