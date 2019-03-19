@@ -110,11 +110,47 @@ div {
     object-fit: cover;
     }
     div {
-      width: 220px;
+      width: 60%;
       padding: 5px;
       border: 5px solid gray;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+    }
+    nav {
+      position: fixed;
+      text-align: left;
+      top: 0;
+      right: 10;
+      width: 100%;
+      background-color: #333;
+    }
+    span {
+      display: block;
+    }
+}
+
+@media screen and (min-width: 920px ) {
+  img {
+    width: 240px;
+    height: 160px;
+    padding: 8px;
+    border: 16px;
+    margin: 24px;
+    object-fit: cover;
+    }
+    div {
+      width: 220px;
+      padding: 5px;
+      border: 5px solid gray;
+    }
+    span{
+      display: inline-block;
+    }
+    .scroll {
+      display: block;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
     }
 }
