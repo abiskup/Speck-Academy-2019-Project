@@ -3,6 +3,8 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #333;
 }
 
@@ -14,8 +16,12 @@ h1 {
 }
 
 nav {
-  float: right;
-  padding: 10px 20px;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  right: 10;
+  width: 100%;
+  background-color: #333;
 }
 
 a {
@@ -29,13 +35,122 @@ a:hover {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
   padding-top: 30px;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
   color: white;
   text-align: center;
   height: 100px;
   background-color: #333;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(211, 211, 211);
+  color: white;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(211, 211, 211);
+  color: white;
+}
+input[type=submit] {
+  width: 50%;
+  float:left;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgb(36, 61, 128);
+  color: white;
+}
+
+.submit:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div {
+  width: 77%;
+  padding: 10px;
+  border: 5px solid gray;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 640px ) {
+  img {
+    width: 240px;
+    height: 160px;
+    padding: 8px;
+    border: 16px;
+    margin: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    }
+    div {
+      width: 60%;
+      padding: 5px;
+      border: 5px solid gray;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      position: fixed;
+      text-align: left;
+      top: 0;
+      right: 10;
+      width: 100%;
+      background-color: #333;
+    }
+    span {
+      display: block;
+    }
+}
+
+@media screen and (min-width: 920px ) {
+  img {
+    width: 240px;
+    height: 160px;
+    padding: 8px;
+    border: 16px;
+    margin: 24px;
+    object-fit: cover;
+    }
+    div {
+      width: 220px;
+      padding: 5px;
+      border: 5px solid gray;
+    }
+    span{
+      display: inline-block;
+    }
+    .scroll {
+      display: block;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
+    }
 }
