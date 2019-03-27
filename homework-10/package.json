@@ -1,0 +1,3 @@
+{"start-UniqHalls": "node uniqHalls.js",
+"start-ReservationWeekday": "node reservationWeekday.js"
+}
