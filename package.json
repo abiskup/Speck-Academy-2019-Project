@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/abiskup/Speck-Academy-2019-Project#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "lodash": "^4.17.11",
     "luxon": "^1.12.0"
   }
