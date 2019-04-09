@@ -1,28 +1,28 @@
-var vri= newDate ()
+const vri= new Date ();
 var halls = ['dvorana1', 'dvorana2', 'dvorana3', 'dvoran4', 'dvorana5'];
 var dvorana1 = {
 id:1,
 name: 'DvoranaGlavna',
 reservation : {
-isReserved:new Boolean(true),
-reservedFrom:newDate(2019,03,10,10,10),
-reservedUntil:newDate(2019,03,11,10,10),
+isReserved:true,
+reservedFrom:new Date(2019,03,10,10,10),
+reservedUntil:new Date(2019,03,11,10,10),
 }
 }
 var dvorana2 = {
     id:2,
     name: 'DvoranaSporedna',
     reservation : {
-    isReserved:new Boolean(true),
-    reservedFrom:newDate(2019,03,12,10,00),
-    reservedUntil:newDate(2019,03,13,10,0),
+    isReserved:true,
+    reservedFrom:new Date(2019,03,12,10,00),
+    reservedUntil:new Date(2019,03,13,10,0),
     }
     }
     var dvorana3 = {
         id:3,
         name: 'DvoranaSkolska',
         reservation : {
-        isReserved:new Boolean(false),
+        isReserved: false,
         reservedFrom:null,
         reservedUntil:null,
         }
@@ -31,7 +31,7 @@ var dvorana2 = {
             id:4,
             name: 'DvoranaKoncertna',
             reservation : {
-            isReserved:new Boolean(false),
+            isReserved:false,
             reservedFrom:null,
             reservedUntil:null,
             }
@@ -40,7 +40,7 @@ var dvorana2 = {
                 id:5,
                 name: 'DvoranaMala',
                 reservation : {
-                isReserved:new Boolean(false),
+                isReserved:false,
                 reservedFrom:null,
                 reservedUntil:null,
                 }
@@ -84,7 +84,7 @@ var dvorana1 = {
 id:1,
 name: 'DvoranaGlavna',
 reservation : {
-isReserved:new Boolean(true),
+isReserved:true,
 reservedFrom:new Date(2019,03,10,10,10),
 reservedUntil:new Date(2019,03,11,10,10),
 }
@@ -93,7 +93,7 @@ var dvorana2 = {
     id:2,
     name: 'DvoranaSporedna',
     reservation : {
-    isReserved:new Boolean(true),
+    isReserved:true,
     reservedFrom:new Date(2019,03,12,10,00),
     reservedUntil:new Date(2019,03,13,10,0),
     }
@@ -102,7 +102,7 @@ var dvorana2 = {
         id:3,
         name: 'DvoranaSkolska',
         reservation : {
-        isReserved:new Boolean(false),
+        isReserved:false,
         reservedFrom:null,
         reservedUntil:null,
         }
@@ -111,7 +111,7 @@ var dvorana2 = {
             id:4,
             name: 'DvoranaSporedna',
             reservation : {
-            isReserved:new Boolean(false),
+            isReserved:false,
             reservedFrom:null,
             reservedUntil:null,
             }
@@ -120,13 +120,13 @@ var dvorana2 = {
                 id:5,
                 name: 'DvoranaMala',
                 reservation : {
-                isReserved:new Boolean(false),
+                isReserved:false,
                 reservedFrom:null,
                 reservedUntil:null,
                 }
                 }
-export {halls};
-   
+module.exports =  { halls };
+  
    
    //Server
    var express = require('express');
@@ -134,7 +134,7 @@ var app = express();
 app.get('/', (req, res) => {
     res.send('Hello world');
 });
-app.listen(3000, () => console.log('Hello world 3000!'));
+app.listen(3013, () => console.log('Hello world 3000!'));
 var dvorane = require('./halls.js');
 app.get('/halls', function (req, res) {
  res.json('dvorane');

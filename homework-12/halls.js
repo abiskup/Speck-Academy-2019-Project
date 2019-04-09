@@ -49,4 +49,4 @@ var hall5 = {
     }
 }
 halls.push(hall1, hall2, hall3, hall4, hall5);
-module.exports =halls;
+module.exports = halls;
