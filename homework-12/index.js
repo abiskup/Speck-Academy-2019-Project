@@ -48,7 +48,7 @@ var dvorana2 = {
    
    
    
-const http = require('http');
+/*const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3013;
 const server = http.createServer((req, res) => {
@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
 });
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
-});
+});*/
 
 
 halls.push(dvorana1, dvorana2, dvorana3, dvorana4, dvorana5);
