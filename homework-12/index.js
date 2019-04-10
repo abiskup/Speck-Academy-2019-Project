@@ -50,7 +50,7 @@ var dvorana2 = {
    
 const http = require('http');
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 3013;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -60,7 +60,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
-//task 4
+
 halls.push(dvorana1, dvorana2, dvorana3, dvorana4, dvorana5);
 var imenaDvorana = [];
 imenaDvorana.push(dvorana1.name, dvorana2.name, dvorana3.name, dvorana4.name, dvorana5.name);
